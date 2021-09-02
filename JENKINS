@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p /tmp/xavki/
+rm -rf /tmp/xavki/*
+echo '
+public class Main {
+public static void main(String[] args) {
+System.out.println("Hello, World!");
+}
+}
+' >/tmp/xavki/Main.java
+javac /tmp/xavki/Main.java
